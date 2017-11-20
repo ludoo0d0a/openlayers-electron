@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- OpenLayers3 参照 -->
+    <link rel="stylesheet" href="https://unpkg.com/vuelayers/lib/style.css">
+    <script src="https://unpkg.com/openlayers" type="text/javascript"></script>
+    <!-- 自作外部ファイル 参照 -->
+    <link rel="stylesheet" href="sample.css" type="text/css">
+    <script src="sample.js" type="text/javascript"></script>
+</head>
+
+<body onload="init_map()">
+    <div id="screen_top">
+        <!-- 地図本体 -->
+        <div id="map"></div>
+        <!-- 地図下部 -->
+        <form class="form-inline">
+            <label>TypeSelect</label>
+            <select id="type">
+                <option value="Point">Point</option>
+                <option value="LineString">LineString</option>
+                <option value="Polygon">Polygon</option>
+            </select>
+        </form>
+        <!-- コメント -->
+        <hr>
+        <pre>
+  ドラッグ：地図移動。Shift+ALT+ドラッグ：地図回転。Shift+ドラッグ：選択範囲を拡大。Ctrl+ホイール：拡大縮小。
+  Point：クリックで点を追加。既存の点やラインをドラッグすると移動。Shift+既存の点をクリックで削除。
+  LineString：クリックで連続線を追加。ダブルクリックで終点を追加。
+  Polygon：クリックで連続線を追加。始点を選んでクリックするか、ダブルクリックで始点まで閉じる。
+    </pre>
+    </div>
+</body>
+
+</html>

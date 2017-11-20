@@ -1,0 +1,16 @@
+div.fill {width: 100%; height: 100%;}
+body {width: inherit; height:inherit; padding: 0; margin: 0}
+html, body, #map {height: 100%; width: 100%;}
+
+.ol-attribution {
+  padding: 3px;  position: absolute;  background-color:#ffffff;
+  background-color:rgba(230,255,255,0.7);
+  right: 3px;  bottom:5px;  font-size:12px;
+}
+.ol-attribution ul { padding: 0px;  line-height: 14px;  margin: 0px; }
+.ol-attribution li { line-height: inherit;  display: inline;  list-style: none outside none; }
+
+.ol-zoom .ol-zoom-out { margin-top: 202px; }
+.ol-zoomslider { background-color: transparent; top: 2.3em; }
+.ol-touch .ol-zoom .ol-zoom-out { margin-top: 212px; }
+.ol-touch .ol-zoomslider { top: 2.75em; }
